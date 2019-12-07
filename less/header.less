@@ -1,0 +1,112 @@
+
+header{
+
+    .nav-box{
+        height: 70px;
+        background: @headerBg;
+        
+    }
+
+    .nav-box-bottom{
+        height:60px;
+        background: @headerBg;
+        transform: skewY(-2deg);
+        position: relative;
+        top: -30px;
+        z-index: -1;
+        
+    }
+
+    .header-container{
+        .flexContainer(row,flex-start,flex-end);
+        height: 100%;
+
+        .header-content{
+            width: 50%;
+        }
+
+        .nav-align{
+            align-self: center;
+        }
+    }
+
+    .logo-container{
+        .flexContainer(row,center,center);
+        width: 40px;
+        height: 80px;
+        //background: @logoBg;
+        position: relative;
+        top: 85px;
+        left: 50px;
+        
+    
+        .logo{
+            width: 4px;
+            height: 8px;
+            //background: black;
+        
+            .logo-content{
+                .flexContainer(row,center,center);
+                width: 100%;
+                height: 100%;
+                background: @logoBg;
+                transform: skewX(-15deg);
+                transform: skewY(-20deg);
+                border: 3px solid @midBlue;
+                border-radius: 5px;
+
+                
+            }
+        }
+        
+
+    }
+    
+    .logo-text{
+        position: relative;
+        left: 48px;
+        top: 20px;
+        
+        h1{
+            font-family: 'Pinyon Script', cursive;
+            font-size: 6rem;
+            text-shadow: 0 0 2px @darkGrey;
+            
+        }
+
+    
+    }
+
+    nav{
+        .flexContainer(row,space-evenly,flex-start);
+        
+        a{
+            font-family: 'Bebas Neue', cursive;
+            color: @lightGrey;
+            font-size: 2rem;
+
+            &:hover{
+                color: @lightBlue;
+            }
+        }
+
+        div{
+            .flexContainer(row,flex-start,flex-start);
+
+        }
+
+        .link-logo{
+            width: 10px;
+            height: 20px;
+            background: @logoBg;
+            margin-right: 5px;
+            transform: skewX(-15deg);
+            transform: skewY(-20deg);
+            border-radius: 2px;
+            
+        }
+
+
+    }
+
+}
