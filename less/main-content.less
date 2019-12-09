@@ -1,0 +1,168 @@
+
+section{
+    p{
+        font-size: 2rem;
+        color: @text;
+        opacity: 0.0;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+        //animation-delay: 2s;
+        //animation-fill-mode: forwards
+    }
+
+    .main-container{
+        .flexContainer(row,flex-start,flex-start);
+
+        .side-content{
+            width: 25%;
+            min-height: 600px;
+            //border: 1px solid black;
+            .flexContainer(column,flex-start,flex-start);
+
+            .side-inside{
+                //border: 1px solid black;
+                width: 100%;
+                height: 200px;
+                .flexContainer(column,flex-start,flex-start);
+            }
+
+            .side-text{
+                //border: 1px solid black;
+                width: 100%;
+                height: 50px;
+                padding: 0 8px;
+                .flexContainer(column,center,flex-start);
+
+                
+            }
+
+            
+        }
+
+        .mid-content{
+            width: 50%;
+            min-height: 600px;
+            //border: 1px solid black;
+
+            .mid-top-bottom{
+                width: 100%;
+                height: 100px;
+                //border: 1px solid black;
+                .flexContainer(column,center,flex-start);
+
+                .mtb-inside{
+                    width: 100%;
+                    height:50px;
+                    //border: 1px solid black;
+                    .flexContainer(row,center,flex-start);
+                    
+                    
+                }
+                
+                .mtb-text{
+                    //border: 1px solid black;
+                    width: 25%;
+                    height: 50px;
+                    padding: 5px 5px;
+                    //.flexContainer(row,flex-start, center);
+                }
+
+            }
+
+            .mid-main{
+
+                h1{
+                    font-family: 'Solway', serif;
+                    font-size: 6rem;
+                    text-align: center;
+                    color: @lightBlue;
+                    text-shadow: 2px 2px 5px @midBlue;
+                    //opacity: 0.0;
+                    //animation-name: fadeIn;
+                    animation-duration: 5s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                    
+                }
+                
+                h2{
+                    font-size: 5rem;
+                    text-align: center;
+                    margin-top: 60px;
+
+                    
+                }
+                
+                .coder{
+                    font-family: 'Saira Stencil One', cursive;
+                    color: @midBlue;
+                    text-shadow: -2px -2px 2px black, 2px 2px 2px @darkGrey;
+                    opacity: 0.0;
+                    animation-name: fadeIn;
+                    animation-duration: 5s;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+
+                .creator{
+                    font-family: 'Permanent Marker', cursive;
+                    color: @lightGrey;
+                    text-shadow: -2px -2px 2px black, 2px 2px 2px @midBlue;
+                    opacity: 0.0;
+                    animation-name: fadeIn;
+                    animation-duration: 5s;
+                    animation-delay: 4s;
+                    animation-fill-mode: forwards;
+                }
+
+                .developer{
+                    font-family: 'Solway', serif;
+                    color: @darkGrey;
+                    text-shadow: -2px -2px 2px black, 2px 2px 1px @lightGrey;
+                    opacity: 0.0;
+                    animation-name: fadeIn;
+                    animation-duration: 5s;
+                    animation-delay: 6s;
+                    animation-fill-mode: forwards;
+                }
+
+            }
+
+            .mid-bottom{
+                margin-top: 8px;
+
+            }
+        }
+
+        
+
+    }
+
+    .selfRight{
+        align-self: flex-end;
+    }
+
+    .vertSelfRight{
+        text-align: right;
+    }
+
+    .selfCenter{
+        align-self: center;
+    }
+
+    .vertSelfCenter{
+        text-align: center;
+    }
+
+    .selfRightPadd{
+        padding-right: 60px;
+    }
+
+    .selfLeftPadd{
+        padding-left: 60px;
+    }
+
+
+}
