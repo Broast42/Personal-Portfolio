@@ -1,5 +1,15 @@
 
 section{
+    
+    h1{
+        font-family: 'Solway', serif;
+        font-size: 6rem;
+        text-align: center;
+        color: @lightBlue;
+        text-shadow: 2px 2px 5px @midBlue;
+        
+    }
+    
     p{
         font-size: 2rem;
         color: @text;
@@ -75,20 +85,6 @@ section{
             }
 
             .mid-main{
-
-                h1{
-                    font-family: 'Solway', serif;
-                    font-size: 6rem;
-                    text-align: center;
-                    color: @lightBlue;
-                    text-shadow: 2px 2px 5px @midBlue;
-                    //opacity: 0.0;
-                    //animation-name: fadeIn;
-                    animation-duration: 5s;
-                    animation-delay: 2s;
-                    animation-fill-mode: forwards;
-                    
-                }
                 
                 h2{
                     font-size: 5rem;
@@ -169,6 +165,52 @@ section{
 
     .selfLeftPadd{
         padding-left: 60px;
+    }
+
+    .center-box{
+        min-width:800px;
+        margin: 0px auto;
+        margin-top: 100px;
+
+        @media @large-tablet{
+            min-width: 100%;
+        }
+    }
+
+
+    .about-card{
+        width: 50%;
+        min-height: 400px;
+        margin: 40px auto;
+        background: @darkGrey;
+        border: 1px solid @lightGrey;
+        border-radius: 25px;
+        box-shadow: 2px 1px 3px black;
+        .flexContainer(column, flex-start, center);
+
+        @media @large-tablet{
+            width: 95%;
+            
+        }
+
+        img{
+            margin: 20px 0px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        h2{
+            font-family: 'Permanent Marker', cursive;
+            color: @lightGrey;
+            text-shadow: 1px 1px 3px @darkBlue, -1px -1px 3px @darkBlue;
+        }
+
+        p{
+            width: 75%;
+            margin: 20px auto;
+            opacity: 1.0; 
+
+        }
     }
 
 

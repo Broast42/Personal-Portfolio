@@ -9,31 +9,12 @@ window.addEventListener("load", ()=>{
     logo.style.transition = "width 3s, height 3s, transform 3s"
 });
 
-//hover over links and rotate mini-logos
-
-// const linkDiv = document.querySelectorAll(".link-container");
-
-// const miniLogo = document.querySelectorAll('.link-logo');
-
-// linkDiv.forEach((x, i) =>{
-//     x.addEventListener("mouseenter", ()=>{
-//         miniLogo[i].style.transform = "rotate(360deg)";
-//         miniLogo[i].style.transition = "transform 3s";
-        
-//     });
-
-//     x.addEventListener("mouseleave", ()=>{
-//         miniLogo[i].style.transform = "";
-//         miniLogo[i].style.transition = "";
-        
-//     });
-// });
 
 
 // randomly pick a p element and fade it in and out when entering a div
 
 
-const allSectionP = document.querySelectorAll("section p");
+const allSectionP = document.querySelectorAll(".fadeP p");
 const allDivs = document.querySelectorAll(".side-inside, .mtb-inside, .mid-main, .header-content");
 
 //create mouse event
@@ -89,33 +70,6 @@ const navData = [
 ];
 
 //nav bar
-
-                    // <nav>
-                    //     <div class="link-container">
-                    //         <div class="link-logo">
-                    //             <div class="link-logo-content"></div>
-                    //         </div>
-                    //         <a href="index.html">Home</a>
-                    //     </div>
-                    //     <div class="link-container">
-                    //         <div class="link-logo">
-                    //             <div class="link-logo-content"></div>
-                    //         </div>
-                    //         <a href="#">About Me</a>
-                    //     </div >
-                    //     <div class="link-container">
-                    //         <div class="link-logo">
-                    //             <div class="link-logo-content"></div>
-                    //         </div>
-                    //         <a href="#">Skills</a>
-                    //     </div>
-                    //     <div class="link-container">
-                    //         <div class="link-logo">
-                    //             <div class="link-logo-content"></div>
-                    //         </div>
-                    //         <a href="#">Projects</a>
-                    //     </div>    
-                    // </nav>
 
 const navBarDiv = document.querySelector("#nav");
 navBarDiv.appendChild(createNav(navData));

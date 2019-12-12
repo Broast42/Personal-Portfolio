@@ -80,6 +80,11 @@ header{
 
     nav{
         .flexContainer(row,space-evenly,flex-start);
+        @media @large-tablet{
+            flex-direction: column;
+            margin-top: 28px;
+            
+        }
         
         a{
             font-family: 'Bebas Neue', cursive;
@@ -93,6 +98,9 @@ header{
 
         div{
             .flexContainer(row,flex-start,flex-start);
+            @media @large-tablet{
+                padding: 2px;
+            }
 
         }
 
