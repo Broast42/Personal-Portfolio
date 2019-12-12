@@ -132,7 +132,7 @@ function createNav(arr){
         container.classList.add("link-container");
         logo.classList.add("link-logo");
         logoContent.classList.add("link-logo-content");
-        link.src = x.source;
+        link.href = x.source;
         link.textContent = x.name;
 
         nav.appendChild(container);              
