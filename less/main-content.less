@@ -213,5 +213,46 @@ section{
         }
     }
 
+    .skill-card{
+        width: 50%;
+        min-height: 200px;
+        padding: 10px;
+        margin: 40px auto;
+        background: @darkGrey;
+        border: 1px solid @lightGrey;
+        border-radius: 25px;
+        box-shadow: 2px 1px 3px black;
+        .flexContainer(row, space-evenly, center);
+
+        @media @large-tablet{
+            flex-direction: column;
+        }
+
+        i{
+            font-size: 15rem;
+            
+        }
+
+        p{
+            opacity: 1.0;
+        }
+
+        .skill-symbol{
+            align-self: center;
+            
+        }
+
+        .description{
+            .flexContainer(column,center,center);
+            width: 50%;
+            text-align: center;
+            
+
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
 
 }
