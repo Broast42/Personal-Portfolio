@@ -144,6 +144,9 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+h4 {
+  font-size: 1.8rem;
+}
 a {
   text-decoration: none;
 }
@@ -405,6 +408,7 @@ section .center-box {
 section .about-card {
   width: 50%;
   min-height: 400px;
+  padding: 10px;
   margin: 40px auto;
   background: #464866;
   border: 1px solid #aaabb8;
@@ -425,7 +429,8 @@ section .about-card img {
   width: 200px;
   border-radius: 50%;
 }
-section .about-card h2 {
+section .about-card h2,
+section .about-card h3 {
   font-family: 'Permanent Marker', cursive;
   color: #aaabb8;
   text-shadow: 1px 1px 3px #25274d, -1px -1px 3px #25274d;
@@ -434,6 +439,11 @@ section .about-card p {
   width: 75%;
   margin: 20px auto;
   opacity: 1;
+}
+section .about-card address {
+  margin: 20px;
+  font-size: 2rem;
+  color: #2e9cca;
 }
 section .skill-card {
   width: 50%;
@@ -473,6 +483,66 @@ section .skill-card .description {
 }
 section .skill-card .description h2 {
   margin-bottom: 20px;
+}
+section .project-card {
+  width: 50%;
+  min-height: 400px;
+  padding: 10px;
+  margin: 40px auto;
+  background: #464866;
+  border: 1px solid #aaabb8;
+  border-radius: 25px;
+  box-shadow: 2px 1px 3px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .project-card h2,
+section .project-card h3,
+section .project-card h4 {
+  font-family: 'Saira Stencil One', cursive;
+  margin-bottom: 20px;
+  color: #aaabb8;
+  text-shadow: 1px 1px 3px #25274d, -1px -1px 3px #25274d;
+}
+section .project-card img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+@media (max-width: 850px) {
+  section .project-card img {
+    width: 100px;
+  }
+}
+section .project-card p {
+  opacity: 1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .project-card i {
+  font-size: 5rem;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+section .project-card .centerI {
+  text-align: center;
+}
+section .project-card a {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e9cca;
+}
+section .project-card ul {
+  list-style-type: disc;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #25274d;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black;
+}
+section .project-card li {
+  margin-left: 30px;
+  margin-bottom: 6px;
 }
 @keyframes fadeIn {
   from {

@@ -179,13 +179,7 @@ section{
 
 
     .about-card{
-        width: 50%;
-        min-height: 400px;
-        margin: 40px auto;
-        background: @darkGrey;
-        border: 1px solid @lightGrey;
-        border-radius: 25px;
-        box-shadow: 2px 1px 3px black;
+        .cards(400px);
         .flexContainer(column, flex-start, center);
 
         @media @large-tablet{
@@ -199,7 +193,7 @@ section{
             border-radius: 50%;
         }
 
-        h2{
+        h2,h3{
             font-family: 'Permanent Marker', cursive;
             color: @lightGrey;
             text-shadow: 1px 1px 3px @darkBlue, -1px -1px 3px @darkBlue;
@@ -211,17 +205,17 @@ section{
             opacity: 1.0; 
 
         }
+
+        address{
+            margin: 20px;
+            font-size: 2rem;
+            color: @lightBlue
+
+        }
     }
 
     .skill-card{
-        width: 50%;
-        min-height: 200px;
-        padding: 10px;
-        margin: 40px auto;
-        background: @darkGrey;
-        border: 1px solid @lightGrey;
-        border-radius: 25px;
-        box-shadow: 2px 1px 3px black;
+        .cards(200px);
         .flexContainer(row, space-evenly, center);
 
         @media @large-tablet{
@@ -251,6 +245,68 @@ section{
             h2{
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    .project-card{
+        .cards(400px);
+        .flexContainer(column,flex-start,center);
+        
+        h2,h3,h4{
+            font-family: 'Saira Stencil One', cursive;
+            margin-bottom: 20px;
+            color: @lightGrey;
+            text-shadow: 1px 1px 3px @darkBlue, -1px -1px 3px @darkBlue;
+
+        }
+
+        img{
+            width: 200px;
+            margin-bottom: 20px;
+
+            @media @large-tablet{
+                width: 100px;
+            }
+        }
+
+        p{
+            opacity: 1.0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        i{
+            font-size: 5rem;
+            padding-left: 5px;
+            margin-bottom: 10px;
+        }
+
+        .centerI{
+            text-align: center
+        }
+
+        a{
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: @lightBlue;
+            
+        }
+
+        ul{
+            list-style-type: disc;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: @darkBlue;
+            text-shadow: 0px 0px 1px black, -0px -0px 1px black;
+           
+            
+            
+            //.flexContainer(row, space-around, center);
+        }
+
+        li{
+            margin-left: 30px;
+            margin-bottom: 6px;
         }
     }
 
