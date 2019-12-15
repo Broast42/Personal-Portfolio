@@ -1,0 +1,17 @@
+.flexContainer(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.cards(@height){
+    width: 50%;
+    min-height: @height;
+    padding: 10px;
+    margin: 40px auto;
+    background: @darkGrey;
+    border: 1px solid @lightGrey;
+    border-radius: 25px;
+    box-shadow: 2px 1px 3px black;
+}
