@@ -76,17 +76,17 @@ function createNav(arr){
 
 const footerData = [
     {
-        source: "#",
+        source: "https://www.linkedin.com/in/r-dowd-a29a58196/",
         class1: "fab",
         class2: "fa-linkedin" 
     },
     {
-        source: "#",
+        source: "https://www.facebook.com/rjarrett.dowd",
         class1: "fab",
         class2: "fa-facebook-square" 
     },
     {
-        source: "#",
+        source: "https://twitter.com/DowdJarrett",
         class1: "fab",
         class2: "fa-twitter-square" 
     },
