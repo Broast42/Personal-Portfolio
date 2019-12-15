@@ -107,7 +107,7 @@ function createFooter(arr){
         const icon = document.createElement('i');
 
         icon.classList.add(x.class1, x.class2);
-        link.src = x.source;
+        link.href = x.source;
         link.style.cursor = "pointer";
 
         link.appendChild(icon);
