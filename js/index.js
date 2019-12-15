@@ -90,6 +90,11 @@ const footerData = [
         class1: "fab",
         class2: "fa-twitter-square" 
     },
+    {
+        source: "https://github.com/Broast42",
+        class1: "fab",
+        class2: "fa-github-square" 
+    },
 
 ];
 
