@@ -424,6 +424,11 @@ section .about-card {
     width: 95%;
   }
 }
+@media (max-width: 850px) {
+  section .about-card {
+    width: 95%;
+  }
+}
 section .about-card img {
   margin: 20px 0px;
   width: 200px;
@@ -458,6 +463,11 @@ section .skill-card {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 850px) {
+  section .skill-card {
+    width: 95%;
+  }
 }
 @media (max-width: 850px) {
   section .skill-card {
@@ -497,6 +507,11 @@ section .project-card {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 850px) {
+  section .project-card {
+    width: 95%;
+  }
 }
 section .project-card h2,
 section .project-card h3,
