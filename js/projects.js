@@ -9,7 +9,7 @@ const projectData = [
         imageSrc: "img/celeb-doa.jpeg",
         imageAlt: "Celeb Dead or Alive",
         description: "A landing page for a web app that quizzes you on your knowledge of dead or alive celebrities. ",
-        techIcons: [{class:"fa-html5", color: "red"},{class:"fa-css3-alt", color: "green"},{class:"fa-js-square", color: "#2e9cca"}],
+        techIcons: [{class:"fa-html5", color: "red"},{class:"fa-css3-alt", color: "green"},{class:"fa-js-square", color: "#ffff00"}],
         techDescrp: ["Used semantic HTML markup.","Used LESS preprocessor fo CSS styling.","Used JavaScript for mini quiz."],
         gitLink: "https://github.com/Build-Week-PT-Celebrity-Dead-Or-Alive/Marketing-Page"
 
@@ -23,6 +23,17 @@ const projectData = [
         techIcons: [{class:"fa-html5", color: "red"},{class:"fa-css3-alt", color: "green"}],
         techDescrp: ["Used semantic HTML markup.","Used LESS preprocessor fo CSS styling."],
         gitLink: "https://github.com/Broast42/tile-time-gaming"
+
+    },
+    {
+        title: "Rick's Rick and Morty Fan Page",
+        link: "https://ricks-rick-and-morty-fan-page.now.sh/",
+        imageSrc: "img/rick-morty.png",
+        imageAlt: "rick-morty",
+        description: "A simple Rick and Morty Fan page using React",
+        techIcons: [{class:"fa-react", color: "#2e9cca"}],
+        techDescrp: ["Used React and JSX", "Used styled components for styling"],
+        gitLink: "https://github.com/Broast42/Sprint-Challenge-Single-Page-Apps"
 
     },
     
