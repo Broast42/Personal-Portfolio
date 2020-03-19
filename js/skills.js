@@ -16,9 +16,15 @@ const skillData = [
     {
         symbol: "fa-js-square",
         title: "JavaScript",
-        decription: "Well versed in Java Script for dynamic and interactive web sites.",
-        color: "#2e9cca"
+        decription: "Well versed in JavaScript for dynamic and interactive web sites.",
+        color: "#ffff00"
     },
+    {
+        symbol: "fa-react",
+        title: "React",
+        decription: "Experienced in React, JSX and Redux for creating dynamic web apps.",
+        color: "#2e9cca"
+    }
 
 ];
 
